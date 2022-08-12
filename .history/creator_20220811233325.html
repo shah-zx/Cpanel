@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../lib/w3.css">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          -webkit-animation-name: fadeIn; /* Fade in the background */
+          -webkit-animation-duration: 0.4s;
+          animation-name: fadeIn;
+          animation-duration: 0.4s
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          position: fixed;
+          bottom: 0;
+          background-color: #fefefe;
+          width: 100%;
+          -webkit-animation-name: slideIn;
+          -webkit-animation-duration: 0.4s;
+          animation-name: slideIn;
+          animation-duration: 0.4s
+        }
+        
+        /* The Close Button */
+        .close {
+          color: white;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .modal-header {
+          padding: 2px 16px;
+          background-color: #5cb85c;
+          color: white;
+        }
+        
+        .modal-body {padding: 2px 16px;}
+        
+        .modal-footer {
+          padding: 2px 16px;
+          background-color: #5cb85c;
+          color: white;
+        }
+        
+        /* Add Animation */
+        @-webkit-keyframes slideIn {
+          from {bottom: -300px; opacity: 0} 
+          to {bottom: 0; opacity: 1}
+        }
+        
+        @keyframes slideIn {
+          from {bottom: -300px; opacity: 0}
+          to {bottom: 0; opacity: 1}
+        }
+        
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0} 
+          to {opacity: 1}
+        }
+        </style>
+</head>
+<body>
+    <section id="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="fa fa-desktop"></i> <span>3Dhousemap</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="./index.html"><i class="fa fa-desktop"></i> <span>Dashboard</span></a></li>
+                <li><a href="#"><i class="fa fa-users"></i> <span>Customers</span></a></li>
+                <li><a href="#"><i class="fa fa-file"></i> <span>Projects</span></a></li>
+                <li><a href="#"><i class="fa fa-file-pdf-o"></i> <span>Orders</span></a></li>
+                <li><a href="#"><i class="fa fa-money"></i> <span>Income</span></a></li>
+                <li><a href="#"><i class="fa fa-user"></i> <span>Account</span></a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <Section id="main-content">
+        <header>
+            <div class="header-left">
+                <h2 class="toggle-btn">
+                    <i class="fa fa-bars"></i> Dashboard
+                </h2>
+            </div>
+            <div class="header-left header-serach">
+                <div class="serach-par">
+                    <input class="search" type="text" placeholder="Search Here...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="header-left header-profile">
+                <img src="images/user.png" class="img-responsive" />
+                <h3>Abhishek</h3>
+                <p>Admin</p>
+            </div>
+            <div class="clear"></div>
+        </header>
+    <br/>
+    
+        <div class="card">
+            <img src="images/user.png" alt="John" style="width:100%">
+            <h1>Ram</h1>
+            <p class="title">Ram@gmail.com</p>
+            <button class="button button4">Contact</button>
+          </div>
+          <div class="w3-card-4 w3-dark-grey">
+
+            
+              
+                  <div class="w3-container w3-right">
+                    <h3 style="color: black">Design Uploaded:</h3>
+                    <img src="images/homeq.jpg" alt="Avatar" style="width:80%">
+                    <h5>Creator: Ram</h5>
+              
+                    <div class="w3-section">
+                        <button id="myBtn">Open Modal</button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <span class="close">&times;</span>
+                              <h2>Modal Header</h2>
+                            </div>
+                            <div class="modal-body">
+                              <p>Some text in the Modal Body</p>
+                              <p>Some other text...</p>
+                            </div>
+                            <div class="modal-footer">
+                              <h3>Modal Footer</h3>
+                            </div>
+                          </div>
+                      <button class="w3-button w3-red">Decline</button>
+                    </div>
+                  </div>
+                  
+                
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                    </script>
+                  
+              
+         
+</body>
+</html>
